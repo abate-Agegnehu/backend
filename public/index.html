@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .endpoint {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .method {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .status {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager API</h1>
+    <p class="status">✅ API is running!</p>
+    
+    <h2>Available Endpoints:</h2>
+    
+    <div class="endpoint">
+        <p><span class="method">GET</span> /api/tasks</p>
+        <p>Returns all tasks</p>
+    </div>
+    
+    <div class="endpoint">
+        <p><span class="method">POST</span> /api/tasks</p>
+        <p>Creates a new task</p>
+        <p>Body: { "title": "Task title" }</p>
+    </div>
+    
+    <div class="endpoint">
+        <p><span class="method">PUT</span> /api/tasks/:id</p>
+        <p>Toggles task completion status</p>
+    </div>
+    
+    <div class="endpoint">
+        <p><span class="method">DELETE</span> /api/tasks/:id</p>
+        <p>Deletes a task</p>
+    </div>
+</body>
+</html> 
